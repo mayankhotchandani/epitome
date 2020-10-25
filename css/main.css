@@ -3556,6 +3556,7 @@ html[data-useragent*="rv:11.0"] .ss-go-top::after {
       from(transparent),
       to(rgba(255, 255, 255, 0.4))
     );
+  font-size: 2.4em;
 }
 .float {
   position: fixed;
