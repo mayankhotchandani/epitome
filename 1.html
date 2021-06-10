@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+	*{
+			box-sizing: border-box;
+			transition: 0.25s;
+		}
+		body{
+      font: 18px/1.5 'Abel',system-ui, sans-serif;
+			padding: 0 2rem;
+			background: #000E;
+			color: dimgray;
+    }
+    h1{
+      text-align: center;
+      font-size: 3rem;
+      padding-bottom: 0.25em;
+      border-bottom: 1px solid silver;
+      border-image: linear-gradient(to right, transparent 20%, darkslategrey, transparent 80%)30;
+    }
+/*** Specific styles ***/
+    details{
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 0.25rem;
+			border: 1px solid silver;
+    }
+    summary{
+		  list-style-type: '✔  ';
+      font-size: 1.25rem;
+      font-weight: bold;
+      cursor: pointer; 
+      position: relative;
+			outline: none;
+			color: silver;
+    }
+    summary::after{
+      content: "⌄";
+      padding: 0.5rem;
+      position: absolute;
+      right: 0.25rem;
+      top: -0.5rem;
+      color: whitesmoke;
+    }
+    details[open]{
+			background: whitesmoke;
+    }
+	details[open] summary{
+		color: dimgrey;
+	}
+    details[open] summary::after{
+      content: "⌃";
+      color: black;
+    }
+/*** End specific styles ***/
+    p{
+      color: dimgrey;
+      letter-spacing: 1.5;
+    }
+
+</style>
+<body>
+    <h1>F.A.Q.</h1>
+    <details>
+      <summary>Question 1</summary>
+      <p>Just use a <code>details</code> and <code>summary</code> tags with a little CSS, no more JS. You can use any text or emoji as caret.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora in nihil, deleniti saepe optio corrupti dolorum perferendis hic iure, maiores quae vitae provident minus, ipsum, aut tempore facilis doloremque rem.</p>
+    </details>
+    <details>
+      <summary>Question 2</summary>
+      <p>Ipsa veritatis inventore reprehenderit dolorem, officiis. Quaerat doloribus voluptatibus impedit repellat quae perspiciatis nesciunt, recusandae facilis unde fugit et eaque rem voluptatum perferendis libero veniam rerum aliquam eos minima voluptate.</p>
+    </details>
+    <details>
+      <summary>Question 3</summary>
+      <p>Quisquam, necessitatibus quo dolore sequi suscipit magni, voluptatum debitis, accusantium dolorum officia beatae rerum similique optio saepe vel dicta facere modi, voluptatem culpa expedita quaerat eum reprehenderit dolores. Assumenda, doloremque!</p>
+    </details>
+    <details>
+      <summary>Question 4</summary>
+      <p>Dolorum quaerat facilis magnam commodi molestiae atque similique hic enim pariatur nulla magni amet iusto soluta nemo alias odit recusandae repudiandae dignissimos, fugit asperiores quia eius necessitatibus iure. Possimus, illum.</p>
+    </details>
+    <details>
+      <summary>Question 5</summary>
+      <p>Consequuntur voluptate consequatur sed adipisci libero temporibus atque itaque voluptas eos, rerum vero qui. Adipisci illum, molestias commodi unde necessitatibus ea, quod explicabo, deleniti voluptatem aliquam reprehenderit, nobis maiores. Saepe?</p>
+    </details>
+   
+</body>
+<script>
+  
+</script>
+</html>
